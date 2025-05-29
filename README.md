@@ -1,16 +1,24 @@
-# upd_invoice
+# Invoice to PO Converter (Flutter)
 
-A new Flutter project.
+A Flutter app that uses OpenAI's GPT-4o Vision model to extract structured purchase order details from invoice images.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+- 🖼 Upload invoice image (JPG, PNG)
+- 🤖 Extract and structure data using OpenAI Vision
+- 📋 Edit extracted fields and items in a dynamic table
+- 💾 Save to Supabase database
+- 🔁 Convert invoice ↔ PO (toggle mode)
 
-A few resources to get you started if this is your first Flutter project:
+## Tech Stack
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- Flutter
+- Supabase
+- OpenAI GPT-4o Vision
+- Dotenv for secret management
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Setup
+
+```bash
+flutter pub get
+flutter run
